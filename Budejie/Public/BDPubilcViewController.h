@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BDPubilcViewController.h
 //  Budejie
 //
 //  Created by zq m on 2020/3/17.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface BDPubilcViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

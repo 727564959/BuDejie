@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C742420A33B0005A03C /* AppDelegate.m */; };
 		2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C772420A33B0005A03C /* SceneDelegate.m */; };
-		2BB99C7B2420A33B0005A03C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C7A2420A33B0005A03C /* ViewController.m */; };
-		2BB99C7E2420A33B0005A03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB99C7C2420A33B0005A03C /* Main.storyboard */; };
-		2BB99C802420A33F0005A03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB99C7F2420A33F0005A03C /* Assets.xcassets */; };
 		2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */; };
 		2BB99C862420A33F0005A03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C852420A33F0005A03C /* main.m */; };
 		2BB99C902420A33F0005A03C /* BudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C8F2420A33F0005A03C /* BudejieTests.m */; };
 		2BB99C9B2420A33F0005A03C /* BudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C9A2420A33F0005A03C /* BudejieUITests.m */; };
+		2BB99CB12420C7B90005A03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB99CB02420C7B90005A03C /* Assets.xcassets */; };
+		2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CB32420C8000005A03C /* BDEssenceViewController.m */; };
+		2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CB62420C8250005A03C /* BDFriendViewController.m */; };
+		2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CB92420C84B0005A03C /* BDMeViewController.m */; };
+		2BB99CBD2420C8640005A03C /* BDNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CBC2420C8640005A03C /* BDNewViewController.m */; };
+		2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CBF2420C87B0005A03C /* BDPubilcViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +44,6 @@
 		2BB99C742420A33B0005A03C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2BB99C762420A33B0005A03C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		2BB99C772420A33B0005A03C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		2BB99C792420A33B0005A03C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2BB99C7A2420A33B0005A03C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2BB99C7D2420A33B0005A03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2BB99C7F2420A33F0005A03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BB99C822420A33F0005A03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BB99C842420A33F0005A03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BB99C852420A33F0005A03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +53,17 @@
 		2BB99C962420A33F0005A03C /* BudejieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudejieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB99C9A2420A33F0005A03C /* BudejieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudejieUITests.m; sourceTree = "<group>"; };
 		2BB99C9C2420A33F0005A03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BB99CB02420C7B90005A03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../baisibudejie-master/baisibudejie/baisibudejie/Assets.xcassets"; sourceTree = "<group>"; };
+		2BB99CB22420C8000005A03C /* BDEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDEssenceViewController.h; sourceTree = "<group>"; };
+		2BB99CB32420C8000005A03C /* BDEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDEssenceViewController.m; sourceTree = "<group>"; };
+		2BB99CB52420C8250005A03C /* BDFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDFriendViewController.h; sourceTree = "<group>"; };
+		2BB99CB62420C8250005A03C /* BDFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDFriendViewController.m; sourceTree = "<group>"; };
+		2BB99CB82420C84B0005A03C /* BDMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMeViewController.h; sourceTree = "<group>"; };
+		2BB99CB92420C84B0005A03C /* BDMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMeViewController.m; sourceTree = "<group>"; };
+		2BB99CBB2420C8640005A03C /* BDNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDNewViewController.h; sourceTree = "<group>"; };
+		2BB99CBC2420C8640005A03C /* BDNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDNewViewController.m; sourceTree = "<group>"; };
+		2BB99CBE2420C87B0005A03C /* BDPubilcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPubilcViewController.h; sourceTree = "<group>"; };
+		2BB99CBF2420C87B0005A03C /* BDPubilcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDPubilcViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +114,15 @@
 		2BB99C722420A33B0005A03C /* Budejie */ = {
 			isa = PBXGroup;
 			children = (
-				2BB99C732420A33B0005A03C /* AppDelegate.h */,
-				2BB99C742420A33B0005A03C /* AppDelegate.m */,
-				2BB99C762420A33B0005A03C /* SceneDelegate.h */,
-				2BB99C772420A33B0005A03C /* SceneDelegate.m */,
-				2BB99C792420A33B0005A03C /* ViewController.h */,
-				2BB99C7A2420A33B0005A03C /* ViewController.m */,
-				2BB99C7C2420A33B0005A03C /* Main.storyboard */,
-				2BB99C7F2420A33F0005A03C /* Assets.xcassets */,
-				2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */,
 				2BB99C842420A33F0005A03C /* Info.plist */,
-				2BB99C852420A33F0005A03C /* main.m */,
+				2BB99CB02420C7B90005A03C /* Assets.xcassets */,
+				2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */,
+				2BB99CAD2420C2E90005A03C /* Public */,
+				2BB99CAC2420C2870005A03C /* Essence */,
+				2BB99CAB2420C2840005A03C /* FriendTrend */,
+				2BB99CAA2420C2810005A03C /* Me */,
+				2BB99CA92420C27F0005A03C /* New */,
+				2BB99CA82420C2600005A03C /* Other */,
 			);
 			path = Budejie;
 			sourceTree = "<group>";
@@ -135,6 +143,63 @@
 				2BB99C9C2420A33F0005A03C /* Info.plist */,
 			);
 			path = BudejieUITests;
+			sourceTree = "<group>";
+		};
+		2BB99CA82420C2600005A03C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2BB99C852420A33F0005A03C /* main.m */,
+				2BB99C762420A33B0005A03C /* SceneDelegate.h */,
+				2BB99C772420A33B0005A03C /* SceneDelegate.m */,
+				2BB99C732420A33B0005A03C /* AppDelegate.h */,
+				2BB99C742420A33B0005A03C /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2BB99CA92420C27F0005A03C /* New */ = {
+			isa = PBXGroup;
+			children = (
+				2BB99CBB2420C8640005A03C /* BDNewViewController.h */,
+				2BB99CBC2420C8640005A03C /* BDNewViewController.m */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		2BB99CAA2420C2810005A03C /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				2BB99CB82420C84B0005A03C /* BDMeViewController.h */,
+				2BB99CB92420C84B0005A03C /* BDMeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		2BB99CAB2420C2840005A03C /* FriendTrend */ = {
+			isa = PBXGroup;
+			children = (
+				2BB99CB52420C8250005A03C /* BDFriendViewController.h */,
+				2BB99CB62420C8250005A03C /* BDFriendViewController.m */,
+			);
+			path = FriendTrend;
+			sourceTree = "<group>";
+		};
+		2BB99CAC2420C2870005A03C /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				2BB99CB22420C8000005A03C /* BDEssenceViewController.h */,
+				2BB99CB32420C8000005A03C /* BDEssenceViewController.m */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		2BB99CAD2420C2E90005A03C /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				2BB99CBE2420C87B0005A03C /* BDPubilcViewController.h */,
+				2BB99CBF2420C87B0005A03C /* BDPubilcViewController.m */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +264,7 @@
 		2BB99C682420A33A0005A03C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BD;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "zq m";
 				TargetAttributes = {
@@ -240,9 +306,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB99CB12420C7B90005A03C /* Assets.xcassets in Resources */,
 				2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */,
-				2BB99C802420A33F0005A03C /* Assets.xcassets in Resources */,
-				2BB99C7E2420A33B0005A03C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BB99C7B2420A33B0005A03C /* ViewController.m in Sources */,
+				2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */,
+				2BB99CBD2420C8640005A03C /* BDNewViewController.m in Sources */,
 				2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */,
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
+				2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */,
 				2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */,
+				2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */,
+				2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +375,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2BB99C7C2420A33B0005A03C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BB99C7D2420A33B0005A03C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

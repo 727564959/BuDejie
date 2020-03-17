@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  BDMeViewController.h
 //  Budejie
 //
 //  Created by zq m on 2020/3/17.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
+@interface BDMeViewController : UITableViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
