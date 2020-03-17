@@ -19,6 +19,7 @@
 		2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CB92420C84B0005A03C /* BDMeViewController.m */; };
 		2BB99CBD2420C8640005A03C /* BDNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CBC2420C8640005A03C /* BDNewViewController.m */; };
 		2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CBF2420C87B0005A03C /* BDPubilcViewController.m */; };
+		2BB99CCB2420D6BF0005A03C /* BDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CCA2420D6BF0005A03C /* BDTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		2BB99CBC2420C8640005A03C /* BDNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDNewViewController.m; sourceTree = "<group>"; };
 		2BB99CBE2420C87B0005A03C /* BDPubilcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPubilcViewController.h; sourceTree = "<group>"; };
 		2BB99CBF2420C87B0005A03C /* BDPubilcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDPubilcViewController.m; sourceTree = "<group>"; };
+		2BB99CC92420D6BF0005A03C /* BDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTabBarController.h; sourceTree = "<group>"; };
+		2BB99CCA2420D6BF0005A03C /* BDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 		2BB99C722420A33B0005A03C /* Budejie */ = {
 			isa = PBXGroup;
 			children = (
+				2BB99CC22420D4720005A03C /* main */,
 				2BB99C842420A33F0005A03C /* Info.plist */,
 				2BB99CB02420C7B90005A03C /* Assets.xcassets */,
 				2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */,
@@ -200,6 +204,15 @@
 				2BB99CBF2420C87B0005A03C /* BDPubilcViewController.m */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		2BB99CC22420D4720005A03C /* main */ = {
+			isa = PBXGroup;
+			children = (
+				2BB99CC92420D6BF0005A03C /* BDTabBarController.h */,
+				2BB99CCA2420D6BF0005A03C /* BDTabBarController.m */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB99CCB2420D6BF0005A03C /* BDTabBarController.m in Sources */,
 				2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */,
 				2BB99CBD2420C8640005A03C /* BDNewViewController.m in Sources */,
 				2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */,

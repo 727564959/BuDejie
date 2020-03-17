@@ -1,9 +1,5 @@
 #import "SceneDelegate.h"
-#import "BDMeViewController.h"
-#import "BDNewViewController.h"
-#import "BDFriendViewController.h"
-#import "BDPubilcViewController.h"
-#import "BDEssenceViewController.h"
+#import "BDTabBarController.h"
 
 @interface SceneDelegate ()
 
@@ -19,28 +15,12 @@
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = [UIScreen mainScreen].bounds;
-    UITabBarController *tabbarVC = [[UITabBarController alloc] init];
+    BDTabBarController *tabbarVC = [[BDTabBarController alloc] init];
     self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
     
-    BDEssenceViewController *essenceVC = [[BDEssenceViewController alloc] init];
-    UINavigationController *essenceNaviVC = [[UINavigationController alloc] initWithRootViewController:essenceVC];
-    [tabbarVC addChildViewController:essenceNaviVC];
+
     
-    BDMeViewController *meVC = [[BDMeViewController alloc] init];
-    UINavigationController *meNaviVC = [[UINavigationController alloc] initWithRootViewController:meVC];
-    [tabbarVC addChildViewController:meNaviVC];
-    
-    BDNewViewController *newVC = [[BDNewViewController alloc] init];
-    UINavigationController *newNaviVC = [[UINavigationController alloc] initWithRootViewController:newVC];
-    [tabbarVC addChildViewController:newNaviVC];
-    
-    BDFriendViewController *friendVC = [[BDFriendViewController alloc] init];
-    UINavigationController *friendNaviVC = [[UINavigationController alloc] initWithRootViewController:friendVC];
-    [tabbarVC addChildViewController:friendNaviVC];
-    
-    BDPubilcViewController *pubilcVC = [[BDPubilcViewController alloc] init];
-    [tabbarVC addChildViewController:pubilcVC];
 }
 
 
