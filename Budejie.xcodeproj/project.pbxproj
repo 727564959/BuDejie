@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B2EEFAF2424AFBD0077770B /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFAE2424AFBD0077770B /* UIBarButtonItem+item.m */; };
 		2B2EEFB22424BCB60077770B /* BDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFB12424BCB60077770B /* BDNavigationViewController.m */; };
+		2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFB52424C2100077770B /* BDSettingViewController.m */; };
 		2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D0242210F800BBD978 /* BDTabBar.m */; };
 		2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D32424976700BBD978 /* UIView+Frame.m */; };
 		2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C742420A33B0005A03C /* AppDelegate.m */; };
@@ -49,6 +50,8 @@
 		2B2EEFAE2424AFBD0077770B /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
 		2B2EEFB02424BCB60077770B /* BDNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDNavigationViewController.h; sourceTree = "<group>"; };
 		2B2EEFB12424BCB60077770B /* BDNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDNavigationViewController.m; sourceTree = "<group>"; };
+		2B2EEFB42424C2100077770B /* BDSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSettingViewController.h; sourceTree = "<group>"; };
+		2B2EEFB52424C2100077770B /* BDSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSettingViewController.m; sourceTree = "<group>"; };
 		2B7D43CF242210F800BBD978 /* BDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTabBar.h; sourceTree = "<group>"; };
 		2B7D43D0242210F800BBD978 /* BDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBar.m; sourceTree = "<group>"; };
 		2B7D43D22424976700BBD978 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -110,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B2EEFB32424C1D00077770B /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				2B2EEFB42424C2100077770B /* BDSettingViewController.h */,
+				2B2EEFB52424C2100077770B /* BDSettingViewController.m */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
 		2BB99C672420A33A0005A03C = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		2BB99C722420A33B0005A03C /* Budejie */ = {
 			isa = PBXGroup;
 			children = (
+				2B2EEFB32424C1D00077770B /* setting */,
 				2BB99CC22420D4720005A03C /* main */,
 				2BB99C842420A33F0005A03C /* Info.plist */,
 				2BB99CB02420C7B90005A03C /* Assets.xcassets */,
@@ -384,6 +397,7 @@
 				2BB99CCB2420D6BF0005A03C /* BDTabBarController.m in Sources */,
 				2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */,
 				2BB99CBD2420C8640005A03C /* BDNewViewController.m in Sources */,
+				2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */,
 				2BB99CD22421F2570005A03C /* UIImage+BDimage.m in Sources */,
 				2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */,
 				2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */,

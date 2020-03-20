@@ -1,43 +1,24 @@
 //
-//  BDMeViewController.m
+//  BDSettingViewController.m
 //  Budejie
 //
-//  Created by zq m on 2020/3/17.
+//  Created by zq m on 2020/3/20.
 //  Copyright © 2020 zq m. All rights reserved.
 //
 
-#import "BDMeViewController.h"
 #import "BDSettingViewController.h"
-@interface BDMeViewController ()
+
+@interface BDSettingViewController ()
 
 @end
 
-@implementation BDMeViewController
+@implementation BDSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupNavBar];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
--(void)setupNavBar {
-    self.navigationItem.title = @"我的";
-    
-    UIBarButtonItem *nightItem = [UIBarButtonItem itemWithImageName:@"mine-moon-icon" itemWithSelectedImageName:@"mine-moon-icon-click" addTarget:nil action:nil];
-    UIBarButtonItem *setItem = [UIBarButtonItem itemWithImageName:@"mine-setting-icon" itemWithHighlightedImageName:@"mine-setting-icon-click" addTarget:self action:@selector(setting)];
-    self.navigationItem.rightBarButtonItems = @[setItem,nightItem];
-}
-
-
-- (void)setting {
-    BDSettingViewController *settingVC = [[BDSettingViewController alloc] init];
-    settingVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:settingVC animated:YES];
-}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
