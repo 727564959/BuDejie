@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2EEFAF2424AFBD0077770B /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFAE2424AFBD0077770B /* UIBarButtonItem+item.m */; };
 		2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D0242210F800BBD978 /* BDTabBar.m */; };
 		2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D32424976700BBD978 /* UIView+Frame.m */; };
 		2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C742420A33B0005A03C /* AppDelegate.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B2EEFAD2424AFBD0077770B /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		2B2EEFAE2424AFBD0077770B /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
 		2B7D43CF242210F800BBD978 /* BDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTabBar.h; sourceTree = "<group>"; };
 		2B7D43D0242210F800BBD978 /* BDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBar.m; sourceTree = "<group>"; };
 		2B7D43D22424976700BBD978 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				2BB99CD12421F2570005A03C /* UIImage+BDimage.m */,
 				2B7D43D22424976700BBD978 /* UIView+Frame.h */,
 				2B7D43D32424976700BBD978 /* UIView+Frame.m */,
+				2B2EEFAD2424AFBD0077770B /* UIBarButtonItem+item.h */,
+				2B2EEFAE2424AFBD0077770B /* UIBarButtonItem+item.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
 				2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */,
 				2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */,
+				2B2EEFAF2424AFBD0077770B /* UIBarButtonItem+item.m in Sources */,
 				2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */,
 				2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */,
 			);

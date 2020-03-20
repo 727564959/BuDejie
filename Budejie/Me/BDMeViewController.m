@@ -16,12 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupNavBar];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)setupNavBar {
+    self.navigationItem.title = @"我的";
+    
+    UIBarButtonItem *nightItem = [UIBarButtonItem itemWithImageName:@"mine-moon-icon" itemWithSelectedImageName:@"mine-moon-icon-click" addTarget:nil action:nil];
+    UIBarButtonItem *setItem = [UIBarButtonItem itemWithImageName:@"mine-setting-icon" itemWithHighlightedImageName:@"mine-setting-icon-click" addTarget:nil action:nil];
+    self.navigationItem.rightBarButtonItems = @[setItem,nightItem];
 }
 
 #pragma mark - Table view data source
