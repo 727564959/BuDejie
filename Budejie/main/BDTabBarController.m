@@ -31,12 +31,6 @@
     BDNewViewController *newVC = [[BDNewViewController alloc] init];
     [self setItemControll:newVC itemTitle:@"新帖" imageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
     
-//    BDPubilcViewController *pubilcVC = [[BDPubilcViewController alloc] init];
-//    [self addChildViewController:pubilcVC];
-//    pubilcVC.tabBarItem.image = [UIImage imageOrignalNamed:@"tabBar_publish_icon"];
-//    pubilcVC.tabBarItem.selectedImage = [UIImage imageOrignalNamed:@"tabBar_publish_click_icon"];
-//    pubilcVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
-    
     
     BDFriendViewController *friendVC = [[BDFriendViewController alloc] init];
     [self setItemControll:friendVC itemTitle:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
