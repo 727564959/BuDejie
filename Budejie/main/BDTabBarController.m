@@ -14,6 +14,7 @@
 #import "BDEssenceViewController.h"
 #import "UIImage+BDimage.h"
 #import "BDTabBar.h"
+#import "BDNavigationViewController.h"
 @interface BDTabBarController ()
 @end
 
@@ -40,7 +41,7 @@
 }
 
 -(void)setItemControll:(UIViewController * _Nonnull)VC itemTitle:(NSString * _Nullable)title imageName:(NSString * _Nonnull)imageName selectedImageName:(NSString *_Nonnull)selectedImageName {
-    UINavigationController *NaviVC = [[UINavigationController alloc] initWithRootViewController:VC];
+    BDNavigationViewController *NaviVC = [[BDNavigationViewController alloc] initWithRootViewController:VC];
     [self addChildViewController:NaviVC];
     NaviVC.tabBarItem.title = title;
     
