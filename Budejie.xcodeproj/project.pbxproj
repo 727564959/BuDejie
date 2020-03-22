@@ -18,7 +18,6 @@
 		2BB99C862420A33F0005A03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C852420A33F0005A03C /* main.m */; };
 		2BB99C902420A33F0005A03C /* BudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C8F2420A33F0005A03C /* BudejieTests.m */; };
 		2BB99C9B2420A33F0005A03C /* BudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C9A2420A33F0005A03C /* BudejieUITests.m */; };
-		2BB99CB12420C7B90005A03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB99CB02420C7B90005A03C /* Assets.xcassets */; };
 		2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CB32420C8000005A03C /* BDEssenceViewController.m */; };
 		2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CB62420C8250005A03C /* BDFriendViewController.m */; };
 		2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CB92420C84B0005A03C /* BDMeViewController.m */; };
@@ -26,6 +25,7 @@
 		2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CBF2420C87B0005A03C /* BDPubilcViewController.m */; };
 		2BB99CCB2420D6BF0005A03C /* BDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CCA2420D6BF0005A03C /* BDTabBarController.m */; };
 		2BB99CD22421F2570005A03C /* UIImage+BDimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99CD12421F2570005A03C /* UIImage+BDimage.m */; };
+		6F54D5072425F462000627FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F54D5062425F462000627FD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		2BB99C962420A33F0005A03C /* BudejieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudejieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB99C9A2420A33F0005A03C /* BudejieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BudejieUITests.m; sourceTree = "<group>"; };
 		2BB99C9C2420A33F0005A03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BB99CB02420C7B90005A03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../baisibudejie-master/baisibudejie/baisibudejie/Assets.xcassets"; sourceTree = "<group>"; };
 		2BB99CB22420C8000005A03C /* BDEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDEssenceViewController.h; sourceTree = "<group>"; };
 		2BB99CB32420C8000005A03C /* BDEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDEssenceViewController.m; sourceTree = "<group>"; };
 		2BB99CB52420C8250005A03C /* BDFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDFriendViewController.h; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		2BB99CCA2420D6BF0005A03C /* BDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBarController.m; sourceTree = "<group>"; };
 		2BB99CD02421F2570005A03C /* UIImage+BDimage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+BDimage.h"; sourceTree = "<group>"; };
 		2BB99CD12421F2570005A03C /* UIImage+BDimage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BDimage.m"; sourceTree = "<group>"; };
+		6F54D5062425F462000627FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,16 +145,16 @@
 		2BB99C722420A33B0005A03C /* Budejie */ = {
 			isa = PBXGroup;
 			children = (
-				2B2EEFB32424C1D00077770B /* setting */,
-				2BB99CC22420D4720005A03C /* main */,
-				2BB99C842420A33F0005A03C /* Info.plist */,
-				2BB99CB02420C7B90005A03C /* Assets.xcassets */,
 				2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */,
-				2BB99CAD2420C2E90005A03C /* Public */,
+				6F54D5062425F462000627FD /* Assets.xcassets */,
+				2BB99C842420A33F0005A03C /* Info.plist */,
+				2BB99CC22420D4720005A03C /* main */,
 				2BB99CAC2420C2870005A03C /* Essence */,
+				2BB99CA92420C27F0005A03C /* New */,
+				2BB99CAD2420C2E90005A03C /* Public */,
 				2BB99CAB2420C2840005A03C /* FriendTrend */,
 				2BB99CAA2420C2810005A03C /* Me */,
-				2BB99CA92420C27F0005A03C /* New */,
+				2B2EEFB32424C1D00077770B /* setting */,
 				2BB99CA82420C2600005A03C /* Other */,
 			);
 			path = Budejie;
@@ -367,7 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BB99CB12420C7B90005A03C /* Assets.xcassets in Resources */,
+				6F54D5072425F462000627FD /* Assets.xcassets in Resources */,
 				2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

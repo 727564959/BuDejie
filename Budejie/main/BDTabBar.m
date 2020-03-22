@@ -42,7 +42,6 @@
         [_btn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [_btn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
         [_btn sizeToFit];
-        NSLog(@"%@",(UIView *)_btn);
     }
     return _btn;
 }

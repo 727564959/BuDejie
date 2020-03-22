@@ -45,17 +45,25 @@
     [self addChildViewController:NaviVC];
     NaviVC.tabBarItem.title = title;
     
-    NSMutableDictionary * attrs = [NSMutableDictionary dictionary];
-    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
-    [NaviVC.tabBarItem setTitleTextAttributes:attrs forState:UIControlStateHighlighted];
-    
     NSMutableDictionary * norAttrs = [NSMutableDictionary dictionary];
-    norAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-    [NaviVC.tabBarItem setTitleTextAttributes:norAttrs forState:UIControlStateNormal];
-    
+       norAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+       [NaviVC.tabBarItem setTitleTextAttributes:norAttrs forState:UIControlStateNormal];
+    NSMutableDictionary * attrs = [NSMutableDictionary dictionary];
+       attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+       [NaviVC.tabBarItem setTitleTextAttributes:attrs forState:UIControlStateSelected];
     NaviVC.tabBarItem.image = [UIImage imageOrignalNamed:imageName];
+    
     NaviVC.tabBarItem.selectedImage = [UIImage imageOrignalNamed:selectedImageName];
+    
+    self.tabBar.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+    self.tabBar.barTintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
 }
 
-
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+//    NSMutableDictionary * attrs = [NSMutableDictionary dictionary];
+//    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+//    [item setTitleTextAttributes:attrs forState:UIControlStateSelected];
+//    NSLog(@"%@",[item valueForKey:@"attribute"]);
+}
 @end
