@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Budejie-BudejieUITests/Pods-Budejie-BudejieUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetwork/AFNetwork.framework
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
