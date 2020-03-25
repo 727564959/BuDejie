@@ -1,6 +1,6 @@
 #import "SceneDelegate.h"
 #import "BDTabBarController.h"
-
+#import "BDAdvertController.h"
 @interface SceneDelegate ()
 
 @end
@@ -15,8 +15,11 @@
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
     self.window.frame = [UIScreen mainScreen].bounds;
-    BDTabBarController *tabbarVC = [[BDTabBarController alloc] init];
-    self.window.rootViewController = tabbarVC;
+//    BDTabBarController *tabbarVC = [[BDTabBarController alloc] init];
+    BDAdvertController *advertVC = [[BDAdvertController alloc] init];
+    //init -> initWithNibName 1.首先判断有没有指定nibName 2.判断下有没有同名xib
+//    self.window.rootViewController = tabbarVC;
+    self.window.rootViewController = advertVC;
     [self.window makeKeyAndVisible];
     
 

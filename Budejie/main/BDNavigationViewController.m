@@ -17,11 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+//    self.interactivePopGestureRecognizer.delegate = self;
+    [self setupGesture];
+    [self setupNavigationBar];
+}
+
+- (void)setupGesture {
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
     [self.view addGestureRecognizer:panGesture];
     panGesture.delegate = self;
-//    self.interactivePopGestureRecognizer.delegate = self;
-    [self setupNavigationBar];
 }
 - (void)setupNavigationBar {
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
