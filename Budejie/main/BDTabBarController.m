@@ -59,11 +59,4 @@
     self.tabBar.barTintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
 }
 
--(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
-{
-//    NSMutableDictionary * attrs = [NSMutableDictionary dictionary];
-//    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
-//    [item setTitleTextAttributes:attrs forState:UIControlStateSelected];
-//    NSLog(@"%@",[item valueForKey:@"attribute"]);
-}
 @end

@@ -8,7 +8,7 @@
 
 #import "BDNavigationViewController.h"
 
-@interface BDNavigationViewController ()
+@interface BDNavigationViewController () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:panGesture];
+    panGesture.delegate = self;
+//    self.interactivePopGestureRecognizer.delegate = self;
     [self setupNavigationBar];
 }
 - (void)setupNavigationBar {
@@ -25,7 +29,13 @@
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:20];
     [self.navigationBar setTitleTextAttributes:attrs];
 }
-
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(nonnull UITouch *)touch
+{
+    if (self.childViewControllers.count > 1) {
+        return YES;
+    }
+    return NO;
+}
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.childViewControllers.count > 0) {
@@ -45,14 +55,7 @@
 -(void)back {
     [self popViewControllerAnimated:YES];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end
