@@ -5,6 +5,7 @@ target 'Budejie' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 	pod 'AFNetworking'
+	pod 'MJExtension'
   # Pods for Budejie
 
   target 'BudejieTests' do

@@ -35,7 +35,6 @@
 
 - (void)setting {
     BDSettingViewController *settingVC = [[BDSettingViewController alloc] init];
-    settingVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:settingVC animated:YES];
 }
 #pragma mark - Table view data source

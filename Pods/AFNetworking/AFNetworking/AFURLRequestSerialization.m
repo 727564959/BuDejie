@@ -1253,7 +1253,6 @@ typedef enum {
             [mutableRequest setValue:value forHTTPHeaderField:field];
         }
     }];
-
     if (parameters) {
         if (![mutableRequest valueForHTTPHeaderField:@"Content-Type"]) {
             [mutableRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];

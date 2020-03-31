@@ -7,7 +7,7 @@
 //
 
 #import "BDNewViewController.h"
-
+#import "BDSubTopicController.h"
 @interface BDNewViewController ()
 
 @end
@@ -20,9 +20,12 @@
     [self setupNavBar];
 }
 
--(void)setupNavBar {
+- (void)setupNavBar {
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"MainTagSubIcon" itemWithHighlightedImageName:@"MainTagSubIconClick" addTarget:nil action:nil];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"MainTagSubIcon" itemWithHighlightedImageName:@"MainTagSubIconClick" addTarget:self action:@selector(jumpToSubTable)];
 }
-
+- (void)jumpToSubTable {
+    BDSubTopicController *vc = [[BDSubTopicController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

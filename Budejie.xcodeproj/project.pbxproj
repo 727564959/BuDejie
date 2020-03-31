@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */; };
 		2BB2D134242B4C5C00D74B01 /* BDAdvertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2D132242B4C5C00D74B01 /* BDAdvertController.xib */; };
 		2BB2D139242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2D138242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		2BB2D1512433499B00D74B01 /* BDSubTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D1502433499B00D74B01 /* BDSubTopicController.m */; };
+		2BB2D15824334CB000D74B01 /* BDHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D15724334CB000D74B01 /* BDHTTPSessionManager.m */; };
 		2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C742420A33B0005A03C /* AppDelegate.m */; };
 		2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C772420A33B0005A03C /* SceneDelegate.m */; };
 		2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */; };
@@ -68,6 +70,10 @@
 		2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAdvertController.m; sourceTree = "<group>"; };
 		2BB2D132242B4C5C00D74B01 /* BDAdvertController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDAdvertController.xib; sourceTree = "<group>"; };
 		2BB2D138242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		2BB2D14F2433499B00D74B01 /* BDSubTopicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSubTopicController.h; sourceTree = "<group>"; };
+		2BB2D1502433499B00D74B01 /* BDSubTopicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSubTopicController.m; sourceTree = "<group>"; };
+		2BB2D15624334CB000D74B01 /* BDHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDHTTPSessionManager.h; sourceTree = "<group>"; };
+		2BB2D15724334CB000D74B01 /* BDHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDHTTPSessionManager.m; sourceTree = "<group>"; };
 		2BB99C702420A33B0005A03C /* Budejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB99C732420A33B0005A03C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BB99C742420A33B0005A03C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,6 +160,15 @@
 			path = advert;
 			sourceTree = "<group>";
 		};
+		2BB2D15224334B0200D74B01 /* netwroking */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2D15624334CB000D74B01 /* BDHTTPSessionManager.h */,
+				2BB2D15724334CB000D74B01 /* BDHTTPSessionManager.m */,
+			);
+			path = netwroking;
+			sourceTree = "<group>";
+		};
 		2BB99C672420A33A0005A03C = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +206,7 @@
 				2BB99CAB2420C2840005A03C /* FriendTrend */,
 				2BB99CAA2420C2810005A03C /* Me */,
 				2B2EEFB32424C1D00077770B /* setting */,
+				2BB2D15224334B0200D74B01 /* netwroking */,
 				2BB99CA82420C2600005A03C /* Other */,
 			);
 			path = Budejie;
@@ -233,6 +249,8 @@
 			children = (
 				2BB99CBB2420C8640005A03C /* BDNewViewController.h */,
 				2BB99CBC2420C8640005A03C /* BDNewViewController.m */,
+				2BB2D14F2433499B00D74B01 /* BDSubTopicController.h */,
+				2BB2D1502433499B00D74B01 /* BDSubTopicController.m */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -309,7 +327,6 @@
 				3D4E331CADDBDBFC94332D99 /* Pods-BudejieTests.debug.xcconfig */,
 				0298E7F4279B8B5B871AD704 /* Pods-BudejieTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -565,6 +582,7 @@
 			files = (
 				2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */,
 				2BB99CCB2420D6BF0005A03C /* BDTabBarController.m in Sources */,
+				2BB2D15824334CB000D74B01 /* BDHTTPSessionManager.m in Sources */,
 				2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */,
 				2BB99CBD2420C8640005A03C /* BDNewViewController.m in Sources */,
 				2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */,
@@ -578,6 +596,7 @@
 				2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */,
 				2B2EEFB22424BCB60077770B /* BDNavigationViewController.m in Sources */,
 				2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */,
+				2BB2D1512433499B00D74B01 /* BDSubTopicController.m in Sources */,
 				2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

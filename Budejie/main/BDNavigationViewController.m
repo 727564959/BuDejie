@@ -54,6 +54,7 @@
         
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
         viewController.navigationItem.leftBarButtonItem.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+        viewController.hidesBottomBarWhenPushed = YES;
     }
     [super pushViewController:viewController animated:animated];
 }
