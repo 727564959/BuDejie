@@ -58,7 +58,7 @@
     
 }
 - (IBAction)skipBtn:(id)sender {
-    [UIApplication sharedApplication].keyWindow.rootViewController = [[BDTabBarController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = [BDTabBarController defaultTabbarVC];
 }
 
 @end

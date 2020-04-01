@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BDTabBarController : UITabBarController
-
++ (instancetype)defaultTabbarVC;
 @end
 
 NS_ASSUME_NONNULL_END

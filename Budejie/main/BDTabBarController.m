@@ -17,8 +17,16 @@
 #import "BDNavigationViewController.h"
 @interface BDTabBarController ()
 @end
-
+static BDTabBarController* instance = nil;
 @implementation BDTabBarController
++ (instancetype)defaultTabbarVC {
+    static dispatch_once_t onceToken;
+       dispatch_once(&onceToken, ^{
+           instance = [[self alloc] init];
+       });
+       return instance;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
