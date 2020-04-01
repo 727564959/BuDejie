@@ -21,6 +21,7 @@
     [self loadData];
     [self.tableView registerNib:[UINib nibWithNibName:@"BDTopicCell" bundle:nil] forCellReuseIdentifier:@"BDTopicCell"];
     self.title = @"推荐标签";
+    self.tableView.separatorInset = UIEdgeInsetsZero;
 }
 
 - (void)loadData{
