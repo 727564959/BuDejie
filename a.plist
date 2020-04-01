@@ -38,7 +38,7 @@
 		<key>is_sub</key>
 		<integer>0</integer>
 		<key>sub_number</key>
-		<string>60665</string>
+		<string>60666</string>
 		<key>theme_id</key>
 		<string>58191</string>
 		<key>theme_name</key>
@@ -74,41 +74,13 @@
 	</dict>
 	<dict>
 		<key>image_list</key>
-		<string>http://img.spriteapp.cn/ugc/2017/06/f3f46ee05a3411e79552842b2b4c75ab.jpg</string>
-		<key>is_default</key>
-		<integer>0</integer>
-		<key>is_sub</key>
-		<integer>0</integer>
-		<key>sub_number</key>
-		<string>52517</string>
-		<key>theme_id</key>
-		<string>22871</string>
-		<key>theme_name</key>
-		<string>音乐汇</string>
-	</dict>
-	<dict>
-		<key>image_list</key>
-		<string>http://img.spriteapp.cn/ugc/2019/08/e4153ad8b9c611e9b0e8842b2b4c75ab.png</string>
-		<key>is_default</key>
-		<integer>0</integer>
-		<key>is_sub</key>
-		<integer>0</integer>
-		<key>sub_number</key>
-		<string>2158</string>
-		<key>theme_id</key>
-		<string>329</string>
-		<key>theme_name</key>
-		<string>生活</string>
-	</dict>
-	<dict>
-		<key>image_list</key>
 		<string>http://img.spriteapp.cn/ugc/2017/08/ba28a35e77fb11e7afa1842b2b4c75ab.jpg</string>
 		<key>is_default</key>
 		<integer>0</integer>
 		<key>is_sub</key>
 		<integer>0</integer>
 		<key>sub_number</key>
-		<string>30214</string>
+		<string>30216</string>
 		<key>theme_id</key>
 		<string>58854</string>
 		<key>theme_name</key>
@@ -164,7 +136,7 @@
 		<key>is_sub</key>
 		<integer>0</integer>
 		<key>sub_number</key>
-		<string>27568</string>
+		<string>27569</string>
 		<key>theme_id</key>
 		<string>15341</string>
 		<key>theme_name</key>
@@ -178,7 +150,7 @@
 		<key>is_sub</key>
 		<integer>0</integer>
 		<key>sub_number</key>
-		<string>135786</string>
+		<string>135787</string>
 		<key>theme_id</key>
 		<string>164</string>
 		<key>theme_name</key>
@@ -192,7 +164,7 @@
 		<key>is_sub</key>
 		<integer>0</integer>
 		<key>sub_number</key>
-		<string>56162</string>
+		<string>56171</string>
 		<key>theme_id</key>
 		<string>58240</string>
 		<key>theme_name</key>
@@ -220,7 +192,7 @@
 		<key>is_sub</key>
 		<integer>0</integer>
 		<key>sub_number</key>
-		<string>20779</string>
+		<string>20782</string>
 		<key>theme_id</key>
 		<string>60386</string>
 		<key>theme_name</key>
@@ -267,6 +239,34 @@
 		<string>63674</string>
 		<key>theme_name</key>
 		<string>原创段子手</string>
+	</dict>
+	<dict>
+		<key>image_list</key>
+		<string>http://img.spriteapp.cn/ugc/2017/06/f3f46ee05a3411e79552842b2b4c75ab.jpg</string>
+		<key>is_default</key>
+		<integer>0</integer>
+		<key>is_sub</key>
+		<integer>0</integer>
+		<key>sub_number</key>
+		<string>52517</string>
+		<key>theme_id</key>
+		<string>22871</string>
+		<key>theme_name</key>
+		<string>音乐汇</string>
+	</dict>
+	<dict>
+		<key>image_list</key>
+		<string>http://img.spriteapp.cn/ugc/2019/08/e4153ad8b9c611e9b0e8842b2b4c75ab.png</string>
+		<key>is_default</key>
+		<integer>0</integer>
+		<key>is_sub</key>
+		<integer>0</integer>
+		<key>sub_number</key>
+		<string>2158</string>
+		<key>theme_id</key>
+		<string>329</string>
+		<key>theme_name</key>
+		<string>生活</string>
 	</dict>
 </array>
 </plist>

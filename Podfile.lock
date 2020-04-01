@@ -15,12 +15,18 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - MJExtension (3.2.1)
+  - SDWebImage (5.6.0):
+    - SDWebImage/Core (= 5.6.0)
+  - SDWebImage/Core (5.6.0)
 
 DEPENDENCIES:
   - AFNetworking
   - MJExtension
+  - SDWebImage
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
   trunk:
     - AFNetworking
     - MJExtension
@@ -28,7 +34,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  SDWebImage: 21b19f56b4226cdfe3aefe4e6848dc43ed129a86
 
-PODFILE CHECKSUM: 8ebb81e7a6bfc9cfe50fd94cf7ce07830db0c12d
+PODFILE CHECKSUM: d410c52e7357f02aaa441aa3fc5fde6d26aed953
 
 COCOAPODS: 1.9.0

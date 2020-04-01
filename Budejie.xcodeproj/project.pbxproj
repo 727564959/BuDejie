@@ -11,6 +11,8 @@
 		2B2EEFAF2424AFBD0077770B /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFAE2424AFBD0077770B /* UIBarButtonItem+item.m */; };
 		2B2EEFB22424BCB60077770B /* BDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFB12424BCB60077770B /* BDNavigationViewController.m */; };
 		2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFB52424C2100077770B /* BDSettingViewController.m */; };
+		2B6242932434824600687782 /* BDTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6242912434824600687782 /* BDTopicCell.m */; };
+		2B6242942434824600687782 /* BDTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6242922434824600687782 /* BDTopicCell.xib */; };
 		2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D0242210F800BBD978 /* BDTabBar.m */; };
 		2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D32424976700BBD978 /* UIView+Frame.m */; };
 		2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */; };
@@ -18,6 +20,7 @@
 		2BB2D139242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2D138242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png */; };
 		2BB2D1512433499B00D74B01 /* BDSubTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D1502433499B00D74B01 /* BDSubTopicController.m */; };
 		2BB2D15824334CB000D74B01 /* BDHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D15724334CB000D74B01 /* BDHTTPSessionManager.m */; };
+		2BB2D15C24346CE500D74B01 /* BDSubTopicMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D15B24346CE500D74B01 /* BDSubTopicMode.m */; };
 		2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C742420A33B0005A03C /* AppDelegate.m */; };
 		2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB99C772420A33B0005A03C /* SceneDelegate.m */; };
 		2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB99C812420A33F0005A03C /* LaunchScreen.storyboard */; };
@@ -61,6 +64,9 @@
 		2B2EEFB12424BCB60077770B /* BDNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDNavigationViewController.m; sourceTree = "<group>"; };
 		2B2EEFB42424C2100077770B /* BDSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSettingViewController.h; sourceTree = "<group>"; };
 		2B2EEFB52424C2100077770B /* BDSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSettingViewController.m; sourceTree = "<group>"; };
+		2B6242902434824600687782 /* BDTopicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTopicCell.h; sourceTree = "<group>"; };
+		2B6242912434824600687782 /* BDTopicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTopicCell.m; sourceTree = "<group>"; };
+		2B6242922434824600687782 /* BDTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDTopicCell.xib; sourceTree = "<group>"; };
 		2B7D43CF242210F800BBD978 /* BDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTabBar.h; sourceTree = "<group>"; };
 		2B7D43D0242210F800BBD978 /* BDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBar.m; sourceTree = "<group>"; };
 		2B7D43D22424976700BBD978 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		2BB2D1502433499B00D74B01 /* BDSubTopicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSubTopicController.m; sourceTree = "<group>"; };
 		2BB2D15624334CB000D74B01 /* BDHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDHTTPSessionManager.h; sourceTree = "<group>"; };
 		2BB2D15724334CB000D74B01 /* BDHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDHTTPSessionManager.m; sourceTree = "<group>"; };
+		2BB2D15A24346CE500D74B01 /* BDSubTopicMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSubTopicMode.h; sourceTree = "<group>"; };
+		2BB2D15B24346CE500D74B01 /* BDSubTopicMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSubTopicMode.m; sourceTree = "<group>"; };
 		2BB99C702420A33B0005A03C /* Budejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB99C732420A33B0005A03C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BB99C742420A33B0005A03C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -169,6 +177,20 @@
 			path = netwroking;
 			sourceTree = "<group>";
 		};
+		2BB2D15924346C9F00D74B01 /* subtopic */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2D14F2433499B00D74B01 /* BDSubTopicController.h */,
+				2BB2D1502433499B00D74B01 /* BDSubTopicController.m */,
+				2BB2D15A24346CE500D74B01 /* BDSubTopicMode.h */,
+				2BB2D15B24346CE500D74B01 /* BDSubTopicMode.m */,
+				2B6242902434824600687782 /* BDTopicCell.h */,
+				2B6242912434824600687782 /* BDTopicCell.m */,
+				2B6242922434824600687782 /* BDTopicCell.xib */,
+			);
+			path = subtopic;
+			sourceTree = "<group>";
+		};
 		2BB99C672420A33A0005A03C = {
 			isa = PBXGroup;
 			children = (
@@ -247,10 +269,9 @@
 		2BB99CA92420C27F0005A03C /* New */ = {
 			isa = PBXGroup;
 			children = (
+				2BB2D15924346C9F00D74B01 /* subtopic */,
 				2BB99CBB2420C8640005A03C /* BDNewViewController.h */,
 				2BB99CBC2420C8640005A03C /* BDNewViewController.m */,
-				2BB2D14F2433499B00D74B01 /* BDSubTopicController.h */,
-				2BB2D1502433499B00D74B01 /* BDSubTopicController.m */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -452,6 +473,7 @@
 				2BB2D139242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				6F54D5072425F462000627FD /* Assets.xcassets in Resources */,
 				2BB2D134242B4C5C00D74B01 /* BDAdvertController.xib in Resources */,
+				2B6242942434824600687782 /* BDTopicCell.xib in Resources */,
 				2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +610,7 @@
 				2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */,
 				2BB99CD22421F2570005A03C /* UIImage+BDimage.m in Sources */,
 				2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */,
+				2BB2D15C24346CE500D74B01 /* BDSubTopicMode.m in Sources */,
 				2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */,
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
 				2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */,
@@ -596,6 +619,7 @@
 				2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */,
 				2B2EEFB22424BCB60077770B /* BDNavigationViewController.m in Sources */,
 				2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */,
+				2B6242932434824600687782 /* BDTopicCell.m in Sources */,
 				2BB2D1512433499B00D74B01 /* BDSubTopicController.m in Sources */,
 				2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */,
 			);

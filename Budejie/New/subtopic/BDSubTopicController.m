@@ -8,16 +8,19 @@
 
 #import "BDSubTopicController.h"
 #import "BDHTTPSessionManager.h"
-
+#import "BDSubTopicMode.h"
+#import "BDTopicCell.h"
+#import <MJExtension.h>
 @interface BDSubTopicController ()
-
+@property (nonatomic, strong) NSArray<BDSubTopicMode *> *items;
 @end
 
 @implementation BDSubTopicController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadData];
+    [self.tableView registerNib:[UINib nibWithNibName:@"BDTopicCell" bundle:nil] forCellReuseIdentifier:@"BDTopicCell"];
+    self.title = @"推荐标签";
 }
 
 - (void)loadData{
@@ -31,32 +34,33 @@
       success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
         [responseObject writeToFile:@"/Users/zqm/Desktop/Budejie/a.plist" atomically:YES];
         NSLog(@"%@",responseObject);
+        self.items = [BDSubTopicMode mj_objectArrayWithKeyValuesArray:responseObject].copy;
+        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
     }];
+
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.items.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    BDTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BDTopicCell" forIndexPath:indexPath];
+    cell.item = self.items[indexPath.row];
     return cell;
 }
-*/
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
+}
 
 /*
 // Override to support conditional editing of the table view.
