@@ -11,6 +11,7 @@
 #import "BDSubTopicMode.h"
 #import "BDTopicCell.h"
 #import <MJExtension.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 @interface BDSubTopicController ()
 @property (nonatomic, strong) NSArray<BDSubTopicMode *> *items;
 @end
@@ -30,14 +31,16 @@
     parameters[@"a"] = @"tag_recommend";
     parameters[@"action"] = @"sub";
     parameters[@"c"] = @"topic";
-    
+    [SVProgressHUD showWithStatus:@"loading..."];
     [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil
       success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         [responseObject writeToFile:@"/Users/zqm/Desktop/Budejie/a.plist" atomically:YES];
         NSLog(@"%@",responseObject);
         self.items = [BDSubTopicMode mj_objectArrayWithKeyValuesArray:responseObject].copy;
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD dismiss];
         NSLog(@"%@",error);
     }];
 

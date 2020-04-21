@@ -7,6 +7,7 @@ target 'Budejie' do
 	pod 'AFNetworking'
 	pod 'MJExtension'
 	pod 'SDWebImage'
+	pod 'SVProgressHUD'
   # Pods for Budejie
 
   target 'BudejieTests' do

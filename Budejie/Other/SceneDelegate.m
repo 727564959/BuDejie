@@ -23,7 +23,7 @@
 //    self.window.rootViewController = tabbarVC;
     self.window.rootViewController = advertVC;
     [self.window makeKeyAndVisible];
-    
+    [UIApplication sharedApplication].delegate.window = self.window;
 
     
 }
