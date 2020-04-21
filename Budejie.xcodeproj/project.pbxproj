@@ -13,6 +13,13 @@
 		2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFB52424C2100077770B /* BDSettingViewController.m */; };
 		2B6242932434824600687782 /* BDTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6242912434824600687782 /* BDTopicCell.m */; };
 		2B6242942434824600687782 /* BDTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6242922434824600687782 /* BDTopicCell.xib */; };
+		2B716BB7244EA305002881AB /* BDFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BB6244EA305002881AB /* BDFriendViewController.xib */; };
+		2B716BBC244EC81A002881AB /* BDSignInViewContronller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BBA244EC81A002881AB /* BDSignInViewContronller.m */; };
+		2B716BBD244EC81A002881AB /* BDSignInViewContronller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BBB244EC81A002881AB /* BDSignInViewContronller.xib */; };
+		2B716BC1244ED389002881AB /* BDLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BC0244ED389002881AB /* BDLoginView.m */; };
+		2B716BC3244ED392002881AB /* BDLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BC2244ED392002881AB /* BDLoginView.xib */; };
+		2B716BC6244EEAB8002881AB /* BDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BC5244EEAB8002881AB /* BDTextField.m */; };
+		2B716BC9244EFB61002881AB /* BDUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BC8244EFB61002881AB /* BDUpButton.m */; };
 		2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D0242210F800BBD978 /* BDTabBar.m */; };
 		2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D32424976700BBD978 /* UIView+Frame.m */; };
 		2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */; };
@@ -67,6 +74,17 @@
 		2B6242902434824600687782 /* BDTopicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTopicCell.h; sourceTree = "<group>"; };
 		2B6242912434824600687782 /* BDTopicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTopicCell.m; sourceTree = "<group>"; };
 		2B6242922434824600687782 /* BDTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDTopicCell.xib; sourceTree = "<group>"; };
+		2B716BB6244EA305002881AB /* BDFriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDFriendViewController.xib; sourceTree = "<group>"; };
+		2B716BB9244EC81A002881AB /* BDSignInViewContronller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSignInViewContronller.h; sourceTree = "<group>"; };
+		2B716BBA244EC81A002881AB /* BDSignInViewContronller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSignInViewContronller.m; sourceTree = "<group>"; };
+		2B716BBB244EC81A002881AB /* BDSignInViewContronller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDSignInViewContronller.xib; sourceTree = "<group>"; };
+		2B716BBF244ED389002881AB /* BDLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDLoginView.h; sourceTree = "<group>"; };
+		2B716BC0244ED389002881AB /* BDLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDLoginView.m; sourceTree = "<group>"; };
+		2B716BC2244ED392002881AB /* BDLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDLoginView.xib; sourceTree = "<group>"; };
+		2B716BC4244EEAB8002881AB /* BDTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTextField.h; sourceTree = "<group>"; };
+		2B716BC5244EEAB8002881AB /* BDTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTextField.m; sourceTree = "<group>"; };
+		2B716BC7244EFB61002881AB /* BDUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDUpButton.h; sourceTree = "<group>"; };
+		2B716BC8244EFB61002881AB /* BDUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDUpButton.m; sourceTree = "<group>"; };
 		2B7D43CF242210F800BBD978 /* BDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTabBar.h; sourceTree = "<group>"; };
 		2B7D43D0242210F800BBD978 /* BDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBar.m; sourceTree = "<group>"; };
 		2B7D43D22424976700BBD978 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -156,6 +174,30 @@
 				2B2EEFB52424C2100077770B /* BDSettingViewController.m */,
 			);
 			path = setting;
+			sourceTree = "<group>";
+		};
+		2B716BB8244EC7CF002881AB /* signin */ = {
+			isa = PBXGroup;
+			children = (
+				2B716BB9244EC81A002881AB /* BDSignInViewContronller.h */,
+				2B716BBA244EC81A002881AB /* BDSignInViewContronller.m */,
+				2B716BBB244EC81A002881AB /* BDSignInViewContronller.xib */,
+				2B716BC7244EFB61002881AB /* BDUpButton.h */,
+				2B716BC8244EFB61002881AB /* BDUpButton.m */,
+			);
+			path = signin;
+			sourceTree = "<group>";
+		};
+		2B716BBE244ED31F002881AB /* login */ = {
+			isa = PBXGroup;
+			children = (
+				2B716BBF244ED389002881AB /* BDLoginView.h */,
+				2B716BC0244ED389002881AB /* BDLoginView.m */,
+				2B716BC2244ED392002881AB /* BDLoginView.xib */,
+				2B716BC4244EEAB8002881AB /* BDTextField.h */,
+				2B716BC5244EEAB8002881AB /* BDTextField.m */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 		2BB2D12F242B48EA00D74B01 /* advert */ = {
@@ -288,8 +330,11 @@
 		2BB99CAB2420C2840005A03C /* FriendTrend */ = {
 			isa = PBXGroup;
 			children = (
+				2B716BBE244ED31F002881AB /* login */,
+				2B716BB8244EC7CF002881AB /* signin */,
 				2BB99CB52420C8250005A03C /* BDFriendViewController.h */,
 				2BB99CB62420C8250005A03C /* BDFriendViewController.m */,
+				2B716BB6244EA305002881AB /* BDFriendViewController.xib */,
 			);
 			path = FriendTrend;
 			sourceTree = "<group>";
@@ -472,6 +517,9 @@
 			files = (
 				2BB2D139242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				6F54D5072425F462000627FD /* Assets.xcassets in Resources */,
+				2B716BBD244EC81A002881AB /* BDSignInViewContronller.xib in Resources */,
+				2B716BB7244EA305002881AB /* BDFriendViewController.xib in Resources */,
+				2B716BC3244ED392002881AB /* BDLoginView.xib in Resources */,
 				2BB2D134242B4C5C00D74B01 /* BDAdvertController.xib in Resources */,
 				2B6242942434824600687782 /* BDTopicCell.xib in Resources */,
 				2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */,
@@ -604,15 +652,19 @@
 			files = (
 				2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */,
 				2BB99CCB2420D6BF0005A03C /* BDTabBarController.m in Sources */,
+				2B716BC6244EEAB8002881AB /* BDTextField.m in Sources */,
 				2BB2D15824334CB000D74B01 /* BDHTTPSessionManager.m in Sources */,
 				2BB99CBA2420C84B0005A03C /* BDMeViewController.m in Sources */,
 				2BB99CBD2420C8640005A03C /* BDNewViewController.m in Sources */,
 				2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */,
+				2B716BC1244ED389002881AB /* BDLoginView.m in Sources */,
 				2BB99CD22421F2570005A03C /* UIImage+BDimage.m in Sources */,
 				2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */,
+				2B716BBC244EC81A002881AB /* BDSignInViewContronller.m in Sources */,
 				2BB2D15C24346CE500D74B01 /* BDSubTopicMode.m in Sources */,
 				2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */,
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
+				2B716BC9244EFB61002881AB /* BDUpButton.m in Sources */,
 				2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */,
 				2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */,
 				2B2EEFAF2424AFBD0077770B /* UIBarButtonItem+item.m in Sources */,

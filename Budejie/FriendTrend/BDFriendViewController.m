@@ -7,13 +7,12 @@
 //
 
 #import "BDFriendViewController.h"
-
+#import "BDSignInViewContronller.h"
 @interface BDFriendViewController ()
 
 @end
 
 @implementation BDFriendViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -23,6 +22,10 @@
 -(void)setupNavBar {
     self.navigationItem.title = @"我的关注";
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"friendsRecommentIcon" itemWithHighlightedImageName:@"friendsRecommentIcon-click" addTarget:nil action:nil];
+}
+- (IBAction)clickSignIn:(id)sender {
+    BDSignInViewContronller *vc = [BDSignInViewContronller new];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
