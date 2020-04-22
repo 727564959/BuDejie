@@ -20,6 +20,7 @@
 @implementation BDMeViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
     [self setupCollectionView];
     [self setupNavBar];
     [self loadData];
@@ -62,6 +63,7 @@
     [self.collectionView registerNib:[UINib nibWithNibName:@"BDMeCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"BDMeCell"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.scrollEnabled = NO;
+    self.collectionView.backgroundColor = [UIColor clearColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
 }
