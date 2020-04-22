@@ -22,36 +22,6 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-uW-19a" userLabel="topView">
-                    <rect key="frame" x="0.0" y="54" width="414" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-6g-c3J">
-                            <rect key="frame" x="330" y="0.0" width="74" height="35"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="注册账号"/>
-                            <state key="selected" title="已有账号？"/>
-                            <connections>
-                                <action selector="clickRegister:" destination="-1" eventType="touchUpInside" id="WPw-Li-KjL"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27g-Ju-kMT">
-                            <rect key="frame" x="10" y="0.0" width="35" height="35"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="login_close_icon"/>
-                            <connections>
-                                <action selector="clickClose:" destination="-1" eventType="touchUpInside" id="4eP-nU-GKz"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjG-1S-wWb" userLabel="signInView">
-                    <rect key="frame" x="0.0" y="129" width="828" height="300"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDI-vc-gSb" userLabel="buttonView">
                     <rect key="frame" x="0.0" y="681" width="414" height="181"/>
                     <subviews>
@@ -96,6 +66,36 @@
                         <constraint firstItem="Aku-EQ-c4M" firstAttribute="leading" secondItem="lW9-iv-Gax" secondAttribute="trailing" id="ugx-pA-KGZ"/>
                         <constraint firstItem="3Yo-yM-Ium" firstAttribute="width" secondItem="sDI-vc-gSb" secondAttribute="width" multiplier="0.333333" id="v6X-nJ-2Ie"/>
                     </constraints>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjG-1S-wWb" userLabel="signInView">
+                    <rect key="frame" x="0.0" y="129" width="828" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-uW-19a" userLabel="topView">
+                    <rect key="frame" x="0.0" y="33" width="414" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-6g-c3J">
+                            <rect key="frame" x="302" y="0.0" width="102" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="注册账号"/>
+                            <state key="selected" title="已有账号？"/>
+                            <connections>
+                                <action selector="clickRegister:" destination="-1" eventType="touchUpInside" id="WPw-Li-KjL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27g-Ju-kMT">
+                            <rect key="frame" x="10" y="0.0" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="login_close_icon"/>
+                            <connections>
+                                <action selector="clickClose:" destination="-1" eventType="touchUpInside" id="4eP-nU-GKz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

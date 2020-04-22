@@ -44,7 +44,8 @@ static BDTabBarController* instance = nil;
     BDFriendViewController *friendVC = [[BDFriendViewController alloc] init];
     [self setItemControll:friendVC itemTitle:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
     
-    BDMeViewController *meVC = [[BDMeViewController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:NSStringFromClass([BDMeViewController class]) bundle:nil];
+    BDMeViewController *meVC = [storyboard instantiateInitialViewController];
     [self setItemControll:meVC itemTitle:@"我" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
 }
 

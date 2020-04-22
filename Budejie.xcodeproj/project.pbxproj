@@ -20,6 +20,10 @@
 		2B716BC3244ED392002881AB /* BDLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BC2244ED392002881AB /* BDLoginView.xib */; };
 		2B716BC6244EEAB8002881AB /* BDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BC5244EEAB8002881AB /* BDTextField.m */; };
 		2B716BC9244EFB61002881AB /* BDUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BC8244EFB61002881AB /* BDUpButton.m */; };
+		2B716BCB244FF239002881AB /* BDMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BCA244FF239002881AB /* BDMeViewController.storyboard */; };
+		2B716BCF24501CD8002881AB /* BDMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BCD24501CD8002881AB /* BDMeCell.m */; };
+		2B716BD024501CD8002881AB /* BDMeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BCE24501CD8002881AB /* BDMeCell.xib */; };
+		2B716BD324502C14002881AB /* BDMeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BD224502C14002881AB /* BDMeItem.m */; };
 		2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D0242210F800BBD978 /* BDTabBar.m */; };
 		2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D32424976700BBD978 /* UIView+Frame.m */; };
 		2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */; };
@@ -85,6 +89,12 @@
 		2B716BC5244EEAB8002881AB /* BDTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTextField.m; sourceTree = "<group>"; };
 		2B716BC7244EFB61002881AB /* BDUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDUpButton.h; sourceTree = "<group>"; };
 		2B716BC8244EFB61002881AB /* BDUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDUpButton.m; sourceTree = "<group>"; };
+		2B716BCA244FF239002881AB /* BDMeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BDMeViewController.storyboard; sourceTree = "<group>"; };
+		2B716BCC24501CD8002881AB /* BDMeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMeCell.h; sourceTree = "<group>"; };
+		2B716BCD24501CD8002881AB /* BDMeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMeCell.m; sourceTree = "<group>"; };
+		2B716BCE24501CD8002881AB /* BDMeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDMeCell.xib; sourceTree = "<group>"; };
+		2B716BD124502C14002881AB /* BDMeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMeItem.h; sourceTree = "<group>"; };
+		2B716BD224502C14002881AB /* BDMeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMeItem.m; sourceTree = "<group>"; };
 		2B7D43CF242210F800BBD978 /* BDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTabBar.h; sourceTree = "<group>"; };
 		2B7D43D0242210F800BBD978 /* BDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBar.m; sourceTree = "<group>"; };
 		2B7D43D22424976700BBD978 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -323,6 +333,12 @@
 			children = (
 				2BB99CB82420C84B0005A03C /* BDMeViewController.h */,
 				2BB99CB92420C84B0005A03C /* BDMeViewController.m */,
+				2B716BCA244FF239002881AB /* BDMeViewController.storyboard */,
+				2B716BCC24501CD8002881AB /* BDMeCell.h */,
+				2B716BCD24501CD8002881AB /* BDMeCell.m */,
+				2B716BCE24501CD8002881AB /* BDMeCell.xib */,
+				2B716BD124502C14002881AB /* BDMeItem.h */,
+				2B716BD224502C14002881AB /* BDMeItem.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -516,7 +532,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB2D139242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				2B716BD024501CD8002881AB /* BDMeCell.xib in Resources */,
 				6F54D5072425F462000627FD /* Assets.xcassets in Resources */,
+				2B716BCB244FF239002881AB /* BDMeViewController.storyboard in Resources */,
 				2B716BBD244EC81A002881AB /* BDSignInViewContronller.xib in Resources */,
 				2B716BB7244EA305002881AB /* BDFriendViewController.xib in Resources */,
 				2B716BC3244ED392002881AB /* BDLoginView.xib in Resources */,
@@ -664,6 +682,8 @@
 				2BB2D15C24346CE500D74B01 /* BDSubTopicMode.m in Sources */,
 				2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */,
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
+				2B716BD324502C14002881AB /* BDMeItem.m in Sources */,
+				2B716BCF24501CD8002881AB /* BDMeCell.m in Sources */,
 				2B716BC9244EFB61002881AB /* BDUpButton.m in Sources */,
 				2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */,
 				2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */,
