@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BDMeViewController : UITableViewController
-
 @end
 
 NS_ASSUME_NONNULL_END

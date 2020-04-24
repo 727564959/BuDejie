@@ -12,6 +12,8 @@
 #import "BDMeCell.h"
 #import <MJExtension/MJExtension.h>
 #import "BDMeItem.h"
+#import "BDWebViewController.h"
+
 @interface BDMeViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -87,6 +89,13 @@
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    BDWebViewController *webVC = [[BDWebViewController alloc] init];
+    BDMeItem *item = self.items[indexPath.row];
+    if ([item.url hasPrefix:@"http://"]) {
+        [webVC loadWebViewWithURL:[NSURL URLWithString:item.url]];
+        [self.navigationController pushViewController:webVC animated:YES];
+    }
+}
 
 @end

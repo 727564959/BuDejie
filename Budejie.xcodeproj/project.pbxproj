@@ -24,6 +24,9 @@
 		2B716BCF24501CD8002881AB /* BDMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BCD24501CD8002881AB /* BDMeCell.m */; };
 		2B716BD024501CD8002881AB /* BDMeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BCE24501CD8002881AB /* BDMeCell.xib */; };
 		2B716BD324502C14002881AB /* BDMeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BD224502C14002881AB /* BDMeItem.m */; };
+		2B716BD824528F26002881AB /* BDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BD624528F26002881AB /* BDWebViewController.m */; };
+		2B716BD924528F26002881AB /* BDWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BD724528F26002881AB /* BDWebViewController.xib */; };
+		2B716BDB2452937D002881AB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B716BDA2452937D002881AB /* WebKit.framework */; };
 		2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D0242210F800BBD978 /* BDTabBar.m */; };
 		2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D32424976700BBD978 /* UIView+Frame.m */; };
 		2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */; };
@@ -95,6 +98,10 @@
 		2B716BCE24501CD8002881AB /* BDMeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDMeCell.xib; sourceTree = "<group>"; };
 		2B716BD124502C14002881AB /* BDMeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMeItem.h; sourceTree = "<group>"; };
 		2B716BD224502C14002881AB /* BDMeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMeItem.m; sourceTree = "<group>"; };
+		2B716BD524528F26002881AB /* BDWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDWebViewController.h; sourceTree = "<group>"; };
+		2B716BD624528F26002881AB /* BDWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDWebViewController.m; sourceTree = "<group>"; };
+		2B716BD724528F26002881AB /* BDWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDWebViewController.xib; sourceTree = "<group>"; };
+		2B716BDA2452937D002881AB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2B7D43CF242210F800BBD978 /* BDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTabBar.h; sourceTree = "<group>"; };
 		2B7D43D0242210F800BBD978 /* BDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTabBar.m; sourceTree = "<group>"; };
 		2B7D43D22424976700BBD978 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -154,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B716BDB2452937D002881AB /* WebKit.framework in Frameworks */,
 				1E92A80A3D762CE74DA556A3 /* Pods_Budejie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +216,16 @@
 				2B716BC5244EEAB8002881AB /* BDTextField.m */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		2B716BD424528EB7002881AB /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				2B716BD524528F26002881AB /* BDWebViewController.h */,
+				2B716BD624528F26002881AB /* BDWebViewController.m */,
+				2B716BD724528F26002881AB /* BDWebViewController.xib */,
+			);
+			path = webview;
 			sourceTree = "<group>";
 		};
 		2BB2D12F242B48EA00D74B01 /* advert */ = {
@@ -331,6 +349,7 @@
 		2BB99CAA2420C2810005A03C /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				2B716BD424528EB7002881AB /* webview */,
 				2BB99CB82420C84B0005A03C /* BDMeViewController.h */,
 				2BB99CB92420C84B0005A03C /* BDMeViewController.m */,
 				2B716BCA244FF239002881AB /* BDMeViewController.storyboard */,
@@ -415,6 +434,7 @@
 		4A45A1A8A48ADD69CE4123DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B716BDA2452937D002881AB /* WebKit.framework */,
 				75708C086A52063D0501B034 /* Pods_Budejie.framework */,
 				97B0FAACF60DD928A5E69069 /* Pods_Budejie_BudejieUITests.framework */,
 				A9F54B013551234EC1FBBCA2 /* Pods_BudejieTests.framework */,
@@ -535,6 +555,7 @@
 				2B716BD024501CD8002881AB /* BDMeCell.xib in Resources */,
 				6F54D5072425F462000627FD /* Assets.xcassets in Resources */,
 				2B716BCB244FF239002881AB /* BDMeViewController.storyboard in Resources */,
+				2B716BD924528F26002881AB /* BDWebViewController.xib in Resources */,
 				2B716BBD244EC81A002881AB /* BDSignInViewContronller.xib in Resources */,
 				2B716BB7244EA305002881AB /* BDFriendViewController.xib in Resources */,
 				2B716BC3244ED392002881AB /* BDLoginView.xib in Resources */,
@@ -691,6 +712,7 @@
 				2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */,
 				2B2EEFB22424BCB60077770B /* BDNavigationViewController.m in Sources */,
 				2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */,
+				2B716BD824528F26002881AB /* BDWebViewController.m in Sources */,
 				2B6242932434824600687782 /* BDTopicCell.m in Sources */,
 				2BB2D1512433499B00D74B01 /* BDSubTopicController.m in Sources */,
 				2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */,
