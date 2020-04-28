@@ -13,6 +13,7 @@
 		2B2EEFB62424C2100077770B /* BDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EEFB52424C2100077770B /* BDSettingViewController.m */; };
 		2B6242932434824600687782 /* BDTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6242912434824600687782 /* BDTopicCell.m */; };
 		2B6242942434824600687782 /* BDTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6242922434824600687782 /* BDTopicCell.xib */; };
+		2B65B6962458134C00248D0B /* BDCacheUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B6952458134C00248D0B /* BDCacheUtils.m */; };
 		2B716BB7244EA305002881AB /* BDFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BB6244EA305002881AB /* BDFriendViewController.xib */; };
 		2B716BBC244EC81A002881AB /* BDSignInViewContronller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B716BBA244EC81A002881AB /* BDSignInViewContronller.m */; };
 		2B716BBD244EC81A002881AB /* BDSignInViewContronller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B716BBB244EC81A002881AB /* BDSignInViewContronller.xib */; };
@@ -81,6 +82,8 @@
 		2B6242902434824600687782 /* BDTopicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTopicCell.h; sourceTree = "<group>"; };
 		2B6242912434824600687782 /* BDTopicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTopicCell.m; sourceTree = "<group>"; };
 		2B6242922434824600687782 /* BDTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDTopicCell.xib; sourceTree = "<group>"; };
+		2B65B6942458134C00248D0B /* BDCacheUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDCacheUtils.h; sourceTree = "<group>"; };
+		2B65B6952458134C00248D0B /* BDCacheUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDCacheUtils.m; sourceTree = "<group>"; };
 		2B716BB6244EA305002881AB /* BDFriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDFriendViewController.xib; sourceTree = "<group>"; };
 		2B716BB9244EC81A002881AB /* BDSignInViewContronller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSignInViewContronller.h; sourceTree = "<group>"; };
 		2B716BBA244EC81A002881AB /* BDSignInViewContronller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSignInViewContronller.m; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 			children = (
 				2B2EEFB42424C2100077770B /* BDSettingViewController.h */,
 				2B2EEFB52424C2100077770B /* BDSettingViewController.m */,
+				2B65B6942458134C00248D0B /* BDCacheUtils.h */,
+				2B65B6952458134C00248D0B /* BDCacheUtils.m */,
 			);
 			path = setting;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
 				2B716BD324502C14002881AB /* BDMeItem.m in Sources */,
 				2B716BCF24501CD8002881AB /* BDMeCell.m in Sources */,
+				2B65B6962458134C00248D0B /* BDCacheUtils.m in Sources */,
 				2B716BC9244EFB61002881AB /* BDUpButton.m in Sources */,
 				2BB99CB72420C8250005A03C /* BDFriendViewController.m in Sources */,
 				2BB99C782420A33B0005A03C /* SceneDelegate.m in Sources */,
