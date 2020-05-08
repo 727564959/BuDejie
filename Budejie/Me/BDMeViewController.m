@@ -38,9 +38,9 @@
         weakSelf.items = [BDMeItem mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
         [weakSelf.items removeLastObject];
         [weakSelf.collectionView reloadData];
-        CGFloat width = (BDScreenWidth - 3) / 4;
+        CGFloat width = (kScreenWidth - 3) / 4;
         CGFloat height = ((weakSelf.items.count - 1)/ 4 + 1) * (width + 1);
-        weakSelf.collectionView.frame = CGRectMake(0, 0, BDScreenWidth, height);
+        weakSelf.collectionView.frame = CGRectMake(0, 0, kScreenWidth, height);
         self.tableView.tableFooterView = self.collectionView;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -56,7 +56,7 @@
 
 - (void)setupCollectionView {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    CGFloat width = (BDScreenWidth - 3) / 4;
+    CGFloat width = (kScreenWidth - 3) / 4;
     layout.minimumInteritemSpacing = 1;
     layout.minimumLineSpacing = 1;
     layout.itemSize = CGSizeMake(width, width);

@@ -39,6 +39,7 @@
         BDTitleButton *button = [[BDTitleButton alloc] initWithFrame:CGRectMake(i * buttonWidth, 0, buttonWidth, buttonHight)];
         [button setTitle:titles[i] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [self addSubview:button];
         if (i == 0) {
             button.selected = YES;

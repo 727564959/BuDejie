@@ -15,6 +15,7 @@
 -(instancetype)init{
     if (self = [super init]) {
         [self addSubview:self.btn];
+        self.alpha = 0.95;
     }
     return self;
 }
