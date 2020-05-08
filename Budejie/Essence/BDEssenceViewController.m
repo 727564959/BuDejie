@@ -13,7 +13,7 @@
 #import "BDWordViewController.h"
 #import "BDPictureViewController.h"
 #import "BDTitleBar.h"
-@interface BDEssenceViewController ()
+@interface BDEssenceViewController ()<BDTitleBarDelegate,UIScrollViewDelegate>
 @property (nonatomic, weak) BDTitleBar *titleBar;
 @property (nonatomic, weak) UIScrollView *scrollView;
 @end
@@ -46,6 +46,7 @@
         vc.view.frame = CGRectMake(i * kScreenWidth, -kNavBarAndStatusBarHeight, kScreenWidth, kScreenHeight);
         [scrollView addSubview:vc.view];
     }
+    scrollView.delegate = self;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.pagingEnabled = YES;
@@ -60,8 +61,20 @@
 
 - (void)setupTitleBar {
     BDTitleBar *titleBar = [[BDTitleBar alloc] initWithFrame:CGRectMake(0, kNavBarAndStatusBarHeight, self.view.width, 40)];
+    titleBar.delegate = self;
     [self.view addSubview:titleBar];
     self.titleBar = titleBar;
 }
 
+- (void)changePage:(NSInteger)page {
+    [UIView animateWithDuration:0.3 animations:^{
+        CGPoint offset = self.scrollView.contentOffset;
+        offset.x = page * self.scrollView.width;
+        self.scrollView.contentOffset = offset;
+    }];
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    self.titleBar.page = (NSInteger)(scrollView.contentOffset.x / scrollView.width);
+}
 @end

@@ -11,6 +11,7 @@
 @interface BDTitleBar()
 @property (nonatomic, weak) UIButton *lastBtn;
 @property (nonatomic, weak) UIView *line;
+@property (nonatomic, strong) NSMutableArray<UIButton *> *buttons;
 @end
 @implementation BDTitleBar
 
@@ -18,6 +19,7 @@
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor lightGrayColor];
         self.alpha = 0.6;
+        self.page = 0;
         [self setupLine];
         [self setuptitles];
     }
@@ -32,6 +34,7 @@
     self.line = line;
 }
 - (void)setuptitles {
+    self.buttons = [NSMutableArray array];
     NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
     CGFloat buttonWidth = self.width / titles.count;
     CGFloat buttonHight = self.height;
@@ -41,16 +44,24 @@
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [self addSubview:button];
-        if (i == 0) {
-            button.selected = YES;
-            self.lastBtn = button;
-            [button.titleLabel sizeToFit];
-            self.line.width = button.titleLabel.width - 10;
-            self.line.centerX = button.centerX;
-        }
+        [self.buttons addObject:button];
     }
+    UIButton *btn = self.buttons[0];
+    btn.selected = YES;
+    self.lastBtn = btn;
+    [btn.titleLabel sizeToFit];
+    self.line.width = btn.titleLabel.width - 10;
+    self.line.centerX = btn.centerX;
 }
 - (void)buttonClick:(UIButton *)btn {
+    NSInteger n = [self.buttons indexOfObject:btn];
+    self.page = n;
+    [self.delegate changePage:n];
+}
+
+-(void)setPage:(NSInteger)page {
+    _page = page;
+    UIButton *btn = self.buttons[page];
     self.lastBtn.selected = NO;
     btn.selected = YES;
     self.lastBtn = btn;
@@ -59,4 +70,6 @@
         self.line.centerX = btn.centerX;
     }];
 }
+
+
 @end
