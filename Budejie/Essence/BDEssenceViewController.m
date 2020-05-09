@@ -23,12 +23,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setupChildVC];
     [self setupScrollView];
+    [self setupChildVC];
     [self setupNavBar];
     [self setupTitleBar];
 }
-
+-(void)viewDidAppear:(BOOL)animated {
+    [self loadChildVCWithIndex:0];
+}
 -(void) setupChildVC {
     [self addChildViewController:[[BDAllViewController alloc] init]];
     [self addChildViewController:[[BDVideoViewController alloc] init]];
@@ -41,11 +43,6 @@
     NSInteger count = self.childViewControllers.count;
     scrollView.backgroundColor = [UIColor whiteColor];
     scrollView.contentSize = CGSizeMake(count * kScreenWidth, 0);
-    for (int i = 0; i < count; i++) {
-        UIViewController *vc = self.childViewControllers[i];
-        vc.view.frame = CGRectMake(i * kScreenWidth, -kNavBarAndStatusBarHeight, kScreenWidth, kScreenHeight);
-        [scrollView addSubview:vc.view];
-    }
     scrollView.delegate = self;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.showsHorizontalScrollIndicator = NO;
@@ -71,10 +68,19 @@
         CGPoint offset = self.scrollView.contentOffset;
         offset.x = page * self.scrollView.width;
         self.scrollView.contentOffset = offset;
+    } completion:^(BOOL finished) {
+        [self loadChildVCWithIndex:page];
     }];
 }
 
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     self.titleBar.page = (NSInteger)(scrollView.contentOffset.x / scrollView.width);
+    [self loadChildVCWithIndex:self.titleBar.page];
+}
+
+- (void)loadChildVCWithIndex:(NSInteger)index {
+    UIViewController *vc = self.childViewControllers[index];
+    vc.view.frame = self.scrollView.bounds;
+    [self.scrollView addSubview:vc.view];
 }
 @end
