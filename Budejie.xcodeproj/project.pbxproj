@@ -16,6 +16,7 @@
 		2B6242932434824600687782 /* BDTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6242912434824600687782 /* BDTopicCell.m */; };
 		2B6242942434824600687782 /* BDTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6242922434824600687782 /* BDTopicCell.xib */; };
 		2B65B6962458134C00248D0B /* BDCacheUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B6952458134C00248D0B /* BDCacheUtils.m */; };
+		2B6BA4122466A38300F507F9 /* BDBaseSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6BA4112466A38300F507F9 /* BDBaseSubViewController.m */; };
 		2B6CC3412464FAD0008082A0 /* BDAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CC3402464FAD0008082A0 /* BDAllViewController.m */; };
 		2B6CC3442464FAEA008082A0 /* BDVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CC3432464FAEA008082A0 /* BDVideoViewController.m */; };
 		2B6CC3472464FB27008082A0 /* BDListenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CC3462464FB27008082A0 /* BDListenViewController.m */; };
@@ -95,6 +96,8 @@
 		2B6242922434824600687782 /* BDTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDTopicCell.xib; sourceTree = "<group>"; };
 		2B65B6942458134C00248D0B /* BDCacheUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDCacheUtils.h; sourceTree = "<group>"; };
 		2B65B6952458134C00248D0B /* BDCacheUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDCacheUtils.m; sourceTree = "<group>"; };
+		2B6BA4102466A38300F507F9 /* BDBaseSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBaseSubViewController.h; sourceTree = "<group>"; };
+		2B6BA4112466A38300F507F9 /* BDBaseSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDBaseSubViewController.m; sourceTree = "<group>"; };
 		2B6CC33F2464FAD0008082A0 /* BDAllViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAllViewController.h; sourceTree = "<group>"; };
 		2B6CC3402464FAD0008082A0 /* BDAllViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAllViewController.m; sourceTree = "<group>"; };
 		2B6CC3422464FAEA008082A0 /* BDVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDVideoViewController.h; sourceTree = "<group>"; };
@@ -218,6 +221,25 @@
 				2B65B6952458134C00248D0B /* BDCacheUtils.m */,
 			);
 			path = setting;
+			sourceTree = "<group>";
+		};
+		2B6BA40F24669CDF00F507F9 /* subVC */ = {
+			isa = PBXGroup;
+			children = (
+				2B6CC33F2464FAD0008082A0 /* BDAllViewController.h */,
+				2B6CC3402464FAD0008082A0 /* BDAllViewController.m */,
+				2B6CC3422464FAEA008082A0 /* BDVideoViewController.h */,
+				2B6CC3432464FAEA008082A0 /* BDVideoViewController.m */,
+				2B6CC3452464FB27008082A0 /* BDListenViewController.h */,
+				2B6CC3462464FB27008082A0 /* BDListenViewController.m */,
+				2B6CC3482464FB3B008082A0 /* BDWordViewController.h */,
+				2B6CC3492464FB3B008082A0 /* BDWordViewController.m */,
+				2B6CC34B2464FCCC008082A0 /* BDPictureViewController.h */,
+				2B6CC34C2464FCCC008082A0 /* BDPictureViewController.m */,
+				2B6BA4102466A38300F507F9 /* BDBaseSubViewController.h */,
+				2B6BA4112466A38300F507F9 /* BDBaseSubViewController.m */,
+			);
+			path = subVC;
 			sourceTree = "<group>";
 		};
 		2B716BB8244EC7CF002881AB /* signin */ = {
@@ -403,22 +425,13 @@
 		2BB99CAC2420C2870005A03C /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				2B6BA40F24669CDF00F507F9 /* subVC */,
 				2BB99CB22420C8000005A03C /* BDEssenceViewController.h */,
 				2BB99CB32420C8000005A03C /* BDEssenceViewController.m */,
 				2B6216452463FA8A00B0222B /* BDTitleBar.h */,
 				2B6216462463FA8A00B0222B /* BDTitleBar.m */,
 				2B62164824640B2700B0222B /* BDTitleButton.h */,
 				2B62164924640B2700B0222B /* BDTitleButton.m */,
-				2B6CC33F2464FAD0008082A0 /* BDAllViewController.h */,
-				2B6CC3402464FAD0008082A0 /* BDAllViewController.m */,
-				2B6CC3422464FAEA008082A0 /* BDVideoViewController.h */,
-				2B6CC3432464FAEA008082A0 /* BDVideoViewController.m */,
-				2B6CC3452464FB27008082A0 /* BDListenViewController.h */,
-				2B6CC3462464FB27008082A0 /* BDListenViewController.m */,
-				2B6CC3482464FB3B008082A0 /* BDWordViewController.h */,
-				2B6CC3492464FB3B008082A0 /* BDWordViewController.m */,
-				2B6CC34B2464FCCC008082A0 /* BDPictureViewController.h */,
-				2B6CC34C2464FCCC008082A0 /* BDPictureViewController.m */,
 			);
 			path = Essence;
 			sourceTree = "<group>";
@@ -743,6 +756,7 @@
 				2B716BBC244EC81A002881AB /* BDSignInViewContronller.m in Sources */,
 				2BB2D15C24346CE500D74B01 /* BDSubTopicMode.m in Sources */,
 				2BB99C752420A33B0005A03C /* AppDelegate.m in Sources */,
+				2B6BA4122466A38300F507F9 /* BDBaseSubViewController.m in Sources */,
 				2B6CC3442464FAEA008082A0 /* BDVideoViewController.m in Sources */,
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
 				2B6CC3472464FB27008082A0 /* BDListenViewController.m in Sources */,

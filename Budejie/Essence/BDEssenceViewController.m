@@ -27,10 +27,10 @@
     [self setupScrollView];
     [self setupNavBar];
     [self setupTitleBar];
-}
--(void)viewDidAppear:(BOOL)animated {
     [self loadChildVCWithIndex:0];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isRepeatClickEssenceButton) name:@"BDTabbarDidRepeatClickNotification" object:nil];
 }
+
 -(void) setupChildVC {
     [self addChildViewController:[[BDAllViewController alloc] init]];
     [self addChildViewController:[[BDVideoViewController alloc] init]];
@@ -63,20 +63,37 @@
     self.titleBar = titleBar;
 }
 
-- (void)changePage:(NSInteger)page {
+#pragma mark - BDTitleBarDelegate
+- (void)clickOtherButton:(NSInteger)index {
     [UIView animateWithDuration:0.3 animations:^{
         CGPoint offset = self.scrollView.contentOffset;
-        offset.x = page * self.scrollView.width;
+        offset.x = index * self.scrollView.width;
         self.scrollView.contentOffset = offset;
     } completion:^(BOOL finished) {
-        [self loadChildVCWithIndex:page];
+        [self loadChildVCWithIndex:index];
     }];
 }
 
+-(void)repeatClickButton {
+    [self refreshCurrentSubVC];
+}
+
+#pragma mark -
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     self.titleBar.page = (NSInteger)(scrollView.contentOffset.x / scrollView.width);
     [self loadChildVCWithIndex:self.titleBar.page];
 }
+
+- (void)isRepeatClickEssenceButton {
+    if (self.view.window) {
+        [self refreshCurrentSubVC];
+    }
+}
+
+-(void)refreshCurrentSubVC {
+    
+}
+
 
 - (void)loadChildVCWithIndex:(NSInteger)index {
     UIViewController *vc = self.childViewControllers[index];
@@ -84,4 +101,7 @@
     [self.scrollView addSubview:vc.view];
 }
 
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

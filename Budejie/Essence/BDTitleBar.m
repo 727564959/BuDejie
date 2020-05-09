@@ -53,11 +53,21 @@
     self.line.width = btn.titleLabel.width - 10;
     self.line.centerX = btn.centerX;
 }
+
+
+
 - (void)buttonClick:(UIButton *)btn {
-    NSInteger n = [self.buttons indexOfObject:btn];
-    self.page = n;
-    [self.delegate changePage:n];
+    //判断是否重复点击
+    NSInteger index = [self.buttons indexOfObject:btn];
+    if (self.lastBtn == btn)
+        if ([self.delegate respondsToSelector:@selector(repeatClickButton)])
+            [self.delegate repeatClickButton];
+ 
+    if([self.delegate respondsToSelector:@selector(clickOtherButton:)])
+        [self.delegate clickOtherButton:index];
+    self.page = index;
 }
+
 
 -(void)setPage:(NSInteger)page {
     _page = page;

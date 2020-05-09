@@ -10,7 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol BDTitleBarDelegate <NSObject>
-- (void)changePage:(NSInteger)page;
+- (void)clickOtherButton:(NSInteger)index;
+- (void)repeatClickButton;
 @end
 
 
