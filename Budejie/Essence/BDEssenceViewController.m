@@ -27,10 +27,13 @@
     [self setupScrollView];
     [self setupNavBar];
     [self setupTitleBar];
-    [self loadChildVCWithIndex:0];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isRepeatClickEssenceButton) name:@"BDTabbarDidRepeatClickNotification" object:nil];
 }
 
+-(void) viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [self loadChildVCWithIndex:0];
+}
 -(void) setupChildVC {
     [self addChildViewController:[[BDAllViewController alloc] init]];
     [self addChildViewController:[[BDVideoViewController alloc] init]];
