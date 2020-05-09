@@ -23,8 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setupScrollView];
     [self setupChildVC];
+    [self setupScrollView];
     [self setupNavBar];
     [self setupTitleBar];
 }
@@ -83,4 +83,5 @@
     vc.view.frame = self.scrollView.bounds;
     [self.scrollView addSubview:vc.view];
 }
+
 @end
