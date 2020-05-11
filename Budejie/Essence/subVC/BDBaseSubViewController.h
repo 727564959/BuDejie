@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+static const CGFloat refreshHeaderHeight = 50;
+static const CGFloat refreshFooterHeight = 80;
+#define scrollTopOffsetY (kNavBarAndStatusBarHeight + kTitleBarHeight)
+#define refreshHeaderTopOffsetY (scrollTopOffsetY + refreshHeaderHeight)
+
 
 @interface BDBaseSubViewController : UITableViewController
-
+- (void)repeatClickForReloadData;
 @end
 
 NS_ASSUME_NONNULL_END

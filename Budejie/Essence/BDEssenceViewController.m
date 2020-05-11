@@ -78,7 +78,7 @@
 }
 
 -(void)repeatClickButton {
-    [self refreshCurrentSubVC];
+    [self refreshSubVCWithIndex:self.titleBar.page];
 }
 
 #pragma mark -
@@ -89,12 +89,13 @@
 
 - (void)isRepeatClickEssenceButton {
     if (self.view.window) {
-        [self refreshCurrentSubVC];
+        [self refreshSubVCWithIndex:self.titleBar.page];
     }
 }
 
--(void)refreshCurrentSubVC {
-    
+-(void)refreshSubVCWithIndex:(NSInteger)index {
+    BDBaseSubViewController *vc = (BDBaseSubViewController *)self.childViewControllers[index];
+    [vc repeatClickForReloadData];
 }
 
 
