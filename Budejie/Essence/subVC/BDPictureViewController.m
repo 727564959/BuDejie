@@ -16,17 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-    self.tableView.backgroundColor = [UIColor blueColor];
-    self.tableView.contentInset = UIEdgeInsetsMake(kNavBarAndStatusBarHeight + kTitleBarHeight, 0, kTabBarHeight, 0);
-
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
     return 1;
 }
 
