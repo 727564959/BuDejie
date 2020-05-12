@@ -7,7 +7,6 @@
 //
 
 #import "BDAllViewController.h"
-
 @interface BDAllViewController ()
 
 @end
@@ -16,26 +15,5 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-#pragma mark - Table view data source
-//
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//
-//    return 1;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//
-//    return 30;
-//}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    NSString *str = [NSString stringWithFormat:@"%ld -- %@",(long)indexPath.row, [self class]];
-    cell.textLabel.text = str;
-    
-    return cell;
 }
 @end

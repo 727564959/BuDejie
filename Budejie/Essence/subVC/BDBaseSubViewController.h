@@ -17,6 +17,7 @@ static const CGFloat refreshFooterHeight = 80;
 
 @interface BDBaseSubViewController : UITableViewController
 - (void)repeatClickForReloadData;
+
 @end
 
 NS_ASSUME_NONNULL_END

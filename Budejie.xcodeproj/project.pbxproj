@@ -16,6 +16,7 @@
 		2B6242932434824600687782 /* BDTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6242912434824600687782 /* BDTopicCell.m */; };
 		2B6242942434824600687782 /* BDTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6242922434824600687782 /* BDTopicCell.xib */; };
 		2B65B6962458134C00248D0B /* BDCacheUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B65B6952458134C00248D0B /* BDCacheUtils.m */; };
+		2B6A2785246A778600F6CBB2 /* BDEssenceMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A2784246A778600F6CBB2 /* BDEssenceMode.m */; };
 		2B6BA4122466A38300F507F9 /* BDBaseSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6BA4112466A38300F507F9 /* BDBaseSubViewController.m */; };
 		2B6BA4162468FE3700F507F9 /* BDRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6BA4152468FE3700F507F9 /* BDRefreshView.m */; };
 		2B6CC3412464FAD0008082A0 /* BDAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CC3402464FAD0008082A0 /* BDAllViewController.m */; };
@@ -97,6 +98,8 @@
 		2B6242922434824600687782 /* BDTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDTopicCell.xib; sourceTree = "<group>"; };
 		2B65B6942458134C00248D0B /* BDCacheUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDCacheUtils.h; sourceTree = "<group>"; };
 		2B65B6952458134C00248D0B /* BDCacheUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDCacheUtils.m; sourceTree = "<group>"; };
+		2B6A2783246A778600F6CBB2 /* BDEssenceMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDEssenceMode.h; sourceTree = "<group>"; };
+		2B6A2784246A778600F6CBB2 /* BDEssenceMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDEssenceMode.m; sourceTree = "<group>"; };
 		2B6BA4102466A38300F507F9 /* BDBaseSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBaseSubViewController.h; sourceTree = "<group>"; };
 		2B6BA4112466A38300F507F9 /* BDBaseSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDBaseSubViewController.m; sourceTree = "<group>"; };
 		2B6BA4142468FE3700F507F9 /* BDRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDRefreshView.h; sourceTree = "<group>"; };
@@ -224,6 +227,15 @@
 				2B65B6952458134C00248D0B /* BDCacheUtils.m */,
 			);
 			path = setting;
+			sourceTree = "<group>";
+		};
+		2B6A2782246A776F00F6CBB2 /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A2783246A778600F6CBB2 /* BDEssenceMode.h */,
+				2B6A2784246A778600F6CBB2 /* BDEssenceMode.m */,
+			);
+			path = mode;
 			sourceTree = "<group>";
 		};
 		2B6BA40F24669CDF00F507F9 /* subVC */ = {
@@ -437,6 +449,7 @@
 		2BB99CAC2420C2870005A03C /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				2B6A2782246A776F00F6CBB2 /* mode */,
 				2B6BA4132468FE0900F507F9 /* viewUtil */,
 				2B6BA40F24669CDF00F507F9 /* subVC */,
 				2BB99CB22420C8000005A03C /* BDEssenceViewController.h */,
@@ -785,6 +798,7 @@
 				2B2EEFAF2424AFBD0077770B /* UIBarButtonItem+item.m in Sources */,
 				2B62164A24640B2700B0222B /* BDTitleButton.m in Sources */,
 				2BB99CB42420C8000005A03C /* BDEssenceViewController.m in Sources */,
+				2B6A2785246A778600F6CBB2 /* BDEssenceMode.m in Sources */,
 				2B2EEFB22424BCB60077770B /* BDNavigationViewController.m in Sources */,
 				2BB99CC02420C87B0005A03C /* BDPubilcViewController.m in Sources */,
 				2B716BD824528F26002881AB /* BDWebViewController.m in Sources */,
