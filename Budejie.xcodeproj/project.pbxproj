@@ -40,6 +40,8 @@
 		2B716BDB2452937D002881AB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B716BDA2452937D002881AB /* WebKit.framework */; };
 		2B7D43D1242210F800BBD978 /* BDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D0242210F800BBD978 /* BDTabBar.m */; };
 		2B7D43D42424976700BBD978 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D43D32424976700BBD978 /* UIView+Frame.m */; };
+		2B8F750C246E9EFB005555A1 /* BDEssenceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8F750A246E9EFB005555A1 /* BDEssenceCell.m */; };
+		2B8F750D246E9EFB005555A1 /* BDEssenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B8F750B246E9EFB005555A1 /* BDEssenceCell.xib */; };
 		2BB2D133242B4C5C00D74B01 /* BDAdvertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */; };
 		2BB2D134242B4C5C00D74B01 /* BDAdvertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2D132242B4C5C00D74B01 /* BDAdvertController.xib */; };
 		2BB2D139242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2D138242B54FF00D74B01 /* LaunchImage-800-Portrait-736h@3x.png */; };
@@ -140,6 +142,9 @@
 		2B7D43D22424976700BBD978 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		2B7D43D32424976700BBD978 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		2B7D43D524249B0900BBD978 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2B8F7509246E9EFB005555A1 /* BDEssenceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDEssenceCell.h; sourceTree = "<group>"; };
+		2B8F750A246E9EFB005555A1 /* BDEssenceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDEssenceCell.m; sourceTree = "<group>"; };
+		2B8F750B246E9EFB005555A1 /* BDEssenceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDEssenceCell.xib; sourceTree = "<group>"; };
 		2BB2D130242B4C5C00D74B01 /* BDAdvertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAdvertController.h; sourceTree = "<group>"; };
 		2BB2D131242B4C5C00D74B01 /* BDAdvertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAdvertController.m; sourceTree = "<group>"; };
 		2BB2D132242B4C5C00D74B01 /* BDAdvertController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDAdvertController.xib; sourceTree = "<group>"; };
@@ -300,6 +305,20 @@
 			path = webview;
 			sourceTree = "<group>";
 		};
+		2B8F7508246E9EB3005555A1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2B62164824640B2700B0222B /* BDTitleButton.h */,
+				2B62164924640B2700B0222B /* BDTitleButton.m */,
+				2B6216452463FA8A00B0222B /* BDTitleBar.h */,
+				2B6216462463FA8A00B0222B /* BDTitleBar.m */,
+				2B8F7509246E9EFB005555A1 /* BDEssenceCell.h */,
+				2B8F750A246E9EFB005555A1 /* BDEssenceCell.m */,
+				2B8F750B246E9EFB005555A1 /* BDEssenceCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		2BB2D12F242B48EA00D74B01 /* advert */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,10 +473,7 @@
 				2B6BA40F24669CDF00F507F9 /* subVC */,
 				2BB99CB22420C8000005A03C /* BDEssenceViewController.h */,
 				2BB99CB32420C8000005A03C /* BDEssenceViewController.m */,
-				2B6216452463FA8A00B0222B /* BDTitleBar.h */,
-				2B6216462463FA8A00B0222B /* BDTitleBar.m */,
-				2B62164824640B2700B0222B /* BDTitleButton.h */,
-				2B62164924640B2700B0222B /* BDTitleButton.m */,
+				2B8F7508246E9EB3005555A1 /* view */,
 			);
 			path = Essence;
 			sourceTree = "<group>";
@@ -640,6 +656,7 @@
 				2B716BC3244ED392002881AB /* BDLoginView.xib in Resources */,
 				2BB2D134242B4C5C00D74B01 /* BDAdvertController.xib in Resources */,
 				2B6242942434824600687782 /* BDTopicCell.xib in Resources */,
+				2B8F750D246E9EFB005555A1 /* BDEssenceCell.xib in Resources */,
 				2BB99C832420A33F0005A03C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -788,6 +805,7 @@
 				2BB99C862420A33F0005A03C /* main.m in Sources */,
 				2B6CC3472464FB27008082A0 /* BDListenViewController.m in Sources */,
 				2B6216472463FA8A00B0222B /* BDTitleBar.m in Sources */,
+				2B8F750C246E9EFB005555A1 /* BDEssenceCell.m in Sources */,
 				2B716BD324502C14002881AB /* BDMeItem.m in Sources */,
 				2B6CC34D2464FCCC008082A0 /* BDPictureViewController.m in Sources */,
 				2B716BCF24501CD8002881AB /* BDMeCell.m in Sources */,
