@@ -7,12 +7,25 @@
 //
 
 #import "BDEssenceCell.h"
+@interface BDEssenceCell()
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+@property (weak, nonatomic) IBOutlet UILabel *text;
+@property (weak, nonatomic) IBOutlet UIButton *ding;
+@property (weak, nonatomic) IBOutlet UIButton *cai;
+@property (weak, nonatomic) IBOutlet UIButton *transport;
+@property (weak, nonatomic) IBOutlet UIButton *comment;
+@end
+
+
 
 @implementation BDEssenceCell
-
+-(instancetype)initWithCoder:(NSCoder *)coder {
+    return [super initWithCoder:coder];
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
     // Initialization code
 }
 
@@ -20,5 +33,14 @@
     [super setSelected:selected animated:animated];
     
     // Configure the view for the selected state
+}
+
+
+-(void)setMode:(BDEssenceMode *)mode {
+    _mode = mode;
+    _name.text = mode.name;
+    _time.text = mode.passtime;
+    _text.text = mode.text;
+    
 }
 @end

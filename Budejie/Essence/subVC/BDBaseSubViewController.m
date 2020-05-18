@@ -28,10 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.maxtime = 10000;
-    UINib *nib = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([BDEssenceCell class]) owner:nil options:nil] firstObject];
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"BDEssenceCell"];
+ 
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([BDEssenceCell class]) bundle:nil] forCellReuseIdentifier:@"BDEssenceCell"];
     self.manager = [BDHTTPSessionManager manager];
     self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.allowsSelection = NO;
     self.tableView.contentInset = UIEdgeInsetsMake(scrollTopOffsetY, 0, kTabBarHeight, 0);
     [self setupRefreshView];
 }
@@ -155,11 +156,11 @@
     return self.modes.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
+    return 200;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BDEssenceCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BDEssenceCell" forIndexPath:indexPath];
-    cell.textLabel.text = self.modes[indexPath.row].name;
+    BDEssenceCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BDEssenceCell"];
+    cell.mode = self.modes[indexPath.row];
     return cell;
 }
 @end

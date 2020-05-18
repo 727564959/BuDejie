@@ -16,9 +16,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainCellBackground" translatesAutoresizingMaskIntoConstraints="NO" id="U74-oY-bmU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-ZD-nl3">
                         <rect key="frame" x="16" y="50" width="288" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -105,8 +102,6 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="U74-oY-bmU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BK8-cU-1IU"/>
-                    <constraint firstItem="U74-oY-bmU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Cbc-M9-LD5"/>
                     <constraint firstAttribute="bottom" secondItem="VQr-TY-mLW" secondAttribute="bottom" id="E6Z-ci-hEf"/>
                     <constraint firstItem="hC7-Sl-rSK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KFN-QI-Qoa"/>
                     <constraint firstAttribute="trailing" secondItem="VQr-TY-mLW" secondAttribute="trailing" id="QkH-vD-TtA"/>
@@ -115,18 +110,25 @@
                     <constraint firstAttribute="trailing" secondItem="hC7-Sl-rSK" secondAttribute="trailing" id="foF-rY-VDL"/>
                     <constraint firstItem="VQr-TY-mLW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oon-os-EYt"/>
                     <constraint firstItem="hC7-Sl-rSK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qSm-Bt-o8o"/>
-                    <constraint firstAttribute="trailing" secondItem="U74-oY-bmU" secondAttribute="trailing" id="qaY-Mh-AtH"/>
                     <constraint firstItem="e9K-ZD-nl3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yGi-rE-ztS"/>
-                    <constraint firstAttribute="bottom" secondItem="U74-oY-bmU" secondAttribute="bottom" id="zgB-7c-VQf"/>
                 </constraints>
             </tableViewCellContentView>
             <accessibility key="accessibilityConfiguration" identifier="BDEssenceCell"/>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
-            <point key="canvasLocation" x="-255" y="33"/>
+            <connections>
+                <outlet property="cai" destination="ERw-KK-1En" id="aCZ-9F-YUz"/>
+                <outlet property="comment" destination="cEt-8B-UBo" id="MM1-JS-PCQ"/>
+                <outlet property="ding" destination="MmK-Jg-utt" id="ezu-Gd-Khp"/>
+                <outlet property="icon" destination="34Y-A0-mWA" id="lxw-Xu-qUQ"/>
+                <outlet property="name" destination="0Su-yz-EIM" id="fgw-N5-0LN"/>
+                <outlet property="text" destination="e9K-ZD-nl3" id="CVk-L3-r5A"/>
+                <outlet property="time" destination="o3J-pM-zws" id="h7H-Tw-zfI"/>
+                <outlet property="transport" destination="5gE-12-yPa" id="cCj-3h-aym"/>
+            </connections>
+            <point key="canvasLocation" x="-265" y="-64"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="mainCellBackground" width="2.5" height="2.5"/>
         <image name="mainCellCai" width="20" height="20"/>
         <image name="mainCellCaiClick" width="20" height="20"/>
         <image name="mainCellComment" width="20" height="20"/>
